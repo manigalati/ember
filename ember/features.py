@@ -488,14 +488,14 @@ class PEFeatureExtractor(object):
 
     def __init__(self, feature_version=2):
         self.features = [
-            ByteHistogram(),
-            ByteEntropyHistogram(),
-            StringExtractor(),
+            #ByteHistogram(),
+            #ByteEntropyHistogram(),
+            #StringExtractor(),
             GeneralFileInfo(),
             HeaderFileInfo(),
             SectionInfo(),
-            ImportsInfo(),
-            ExportsInfo()
+            #ImportsInfo(),
+            #ExportsInfo()
         ]
         if feature_version == 1:
             if not lief.__version__.startswith("0.8.3"):
